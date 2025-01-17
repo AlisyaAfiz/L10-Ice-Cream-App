@@ -9,7 +9,8 @@ const styles = StyleSheet.create({
         padding: 20,
         fontFamily:'cursive',
         color: '#614444',
-        backgroundColor: "#e4fbff"
+        backgroundColor: "#cffbff",
+        borderWidth: 1
     },
     boxes: {
         borderWidth: 2,
@@ -61,13 +62,13 @@ const App = () => {
     return (
         <View style={styles.boxes}>
           <Text style={{fontSize: 16}}>{item.Flavor}</Text>
-          <Text style={{fontSize: 12}}>{item.Description}</Text>
+          <Text style={{fontSize: 12, paddingTop: 5}}>{item.Description}</Text>
         </View>
     );
   };
 
   return (
-      <View style={{backgroundColor: "#e3fdd8"}}>
+      <View style={{backgroundColor: "#d7ffc7", paddingBottom: 450}}>
         <Text style={styles.title}>Ben and Jerry</Text>
         <StatusBar/>
           <View style={{margin: 14}}>
