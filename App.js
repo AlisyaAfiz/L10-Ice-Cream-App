@@ -18,7 +18,8 @@ const styles = StyleSheet.create({
         padding: 15,
         borderRadius: 10,
         borderColor: '#614444',
-        backgroundColor: "#efd5d5"
+        backgroundColor: "#efd5d5",
+        elevation: 10
     },
     textBox: {
         borderWidth: 1,
@@ -68,14 +69,14 @@ const App = () => {
   };
 
   return (
-      <View style={{backgroundColor: "#d7ffc7", paddingBottom: 450}}>
+      <View style={{backgroundColor: "#d7ffc7"}}>
         <Text style={styles.title}>Ben and Jerry</Text>
         <StatusBar/>
           <View style={{margin: 14}}>
             <Text style={{color: '#614444'}}>Search:</Text>
             <TextInput style={styles.textBox} placeholder="Search for your favorite flavors..." onChangeText={(text)=>{FilterData(text)}}/>
           </View>
-        <FlatList data={mydata} renderItem={renderItem} />
+        <FlatList data={mydata} renderItem={renderItem} style={{paddingBottom: 450}}/>
       </View>
   );
 }
