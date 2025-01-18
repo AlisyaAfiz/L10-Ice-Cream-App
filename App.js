@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         borderColor: '#614444',
         backgroundColor: "#efd5d5",
-        elevation: 10
+        elevation: 12
     },
     textBox: {
         borderWidth: 1,
